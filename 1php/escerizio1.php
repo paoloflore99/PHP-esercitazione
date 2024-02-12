@@ -2,13 +2,14 @@
 
 
 var_dump($_POST); 
-$invio =  $_POST;
-$stringa = $_POST;
+$nome =  $_POST;
+$password = $_POST;
+$stringa = implode("," , $password);
 
-if ($invio ?? "Quarta" ) {
-    $invio =  "***";
+if ($nome ?? "Quarta" ) {
+    $nome =  "***";
 }else {
-    $invio = "non coretto";
+    $nome = "non coretto";
 }
 
 // echo $invio;
@@ -16,6 +17,11 @@ if ($invio ?? "Quarta" ) {
 
 
 ?>
+
+
+
+
+
 
 
 <!DOCTYPE html>
