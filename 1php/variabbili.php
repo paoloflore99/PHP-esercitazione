@@ -8,6 +8,8 @@ $prova = ["ciao" , "mi" , "chiamo" , "paolo" ,"e sono nato il" , 1999 , 10.07 , 
 echo $variabbile;
 echo $variabbileStringa;
 var_dump($prova)
+
+//06set
 ?>
 
 
@@ -22,3 +24,4 @@ var_dump($prova)
     <h1>ciao mondo</h1>
 </body>
 </html>
+
