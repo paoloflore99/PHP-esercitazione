@@ -1,16 +1,19 @@
 <?php 
 
+$nome = $_POST["nome"] ?? null;
+$password = $_POST["password"] ?? null;
+// var_dump($_POST); 
+// $nome =  $_POST;
+// $password = $_POST;
+// $stringa = implode("," , $password);
+$censurato = str_replace($nome , '***' , $password);
 
-var_dump($_POST); 
-$nome =  $_POST;
-$password = $_POST;
-$stringa = implode("," , $password);
+// if ($_POS["nome"] ?? "paolo" ) {
 
-if ($nome ?? "Quarta" ) {
-    $nome =  "***";
-}else {
-    $nome = "non coretto";
-}
+//     $_POS["nome"] = implode(" , " , $password);
+// }else {
+//     $nome = "non coretto";
+// }
 
 // echo $invio;
 
@@ -37,6 +40,11 @@ if ($nome ?? "Quarta" ) {
 </head>
 <body>
     <h1>paggina di arrivo</h1>
-    <h2>la password e <?php echo $invio ?></h2>
+    <h2>la parola da cercare e  <?php echo $nome ?></h2>
+    <p><?php echo $password ?></p>
+
+    <h2>testo censura</h2>
+    <p><?php echo $censurato ?></p>
+
 </body>
 </html>
