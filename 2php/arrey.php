@@ -39,6 +39,7 @@ $arrey_di_arrey = [
 var_dump($arrey_di_arrey[1][0]);
 
 
+$cerca = $_GET['cerca'];
 //07set 02 15.00
 ?>
 
@@ -51,10 +52,16 @@ var_dump($arrey_di_arrey[1][0]);
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="https://boolean.careers/favicon/favicon.ico">
-        <link rel="stylesheet" href="./css/style.css"><!--css-->
+        <!-- <link rel="stylesheet" href="css/style.css">css -->
         <title>php</title>
 </head>
 <body>
+
+<form action="" method="GET"> 
+
+<input type="text" name="cerca">
+<input class="" type="submit"  value="cerca">
+</form>
     <ul>
         
         
@@ -65,11 +72,14 @@ var_dump($arrey_di_arrey[1][0]);
         <?php } ?> -->
         
         <?php foreach ($spesa as $spesi )  {?>
-        <li> <?php echo $spesi ?> </li> 
+        <li class="list-group-item <?php echo ($cerca  && str_contains($spesi , $cerca) ? 'text-primary' : "") ?>"> <?php echo $spesi ?> </li> 
         <?php  } ?>
         
         
         
     </ul>
+
+
+
 </body>
 </html>
