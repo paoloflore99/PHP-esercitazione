@@ -38,8 +38,15 @@ $hotels = [
     ],
 ];
 
-$parcheggio = $_GET['parcheggio'];
+$parcheggio = isset($_GET['parcheggio']) ? $_GET['parcheggio'] : null;
 
+
+
+if ($hotels[0]["parcheggio"] != false) {
+    var_dump($hotels[0]);
+} else {
+    echo "non va";
+}
 
 
 ?>
@@ -79,7 +86,7 @@ $parcheggio = $_GET['parcheggio'];
     <tr>
       <th scope="row">1</th>
       <?php foreach ($hotels[0] as $hotel[0]) {?>
-      <td><?php echo $hotel[0]?></td>
+      <td class=""><?php echo $hotel[0]?></td>
       <?php } ?>
     </tr>
     <tr>
