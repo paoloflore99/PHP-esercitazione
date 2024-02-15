@@ -14,6 +14,16 @@ var_dump($esempio["nome"]);
 var_dump($esempio[10]);
 
 
+
+$spesa = [
+
+    "pane" ,
+    "pasta",
+    "uova",
+    "cereali",
+    "carne",
+    "pollo",
+];
 $arrey_di_arrey = [
     [
         "1",
@@ -29,7 +39,7 @@ $arrey_di_arrey = [
 var_dump($arrey_di_arrey[1][0]);
 
 
-//07set 02
+//07set 02 15.00
 ?>
 
 
@@ -47,12 +57,18 @@ var_dump($arrey_di_arrey[1][0]);
 <body>
     <ul>
         
-        <li>
-        <?php foreach ($esempio as $key => $esempi) 
         
-        echo  $key , $esempi
-        ?>
+        <!-- <?php foreach ($esempio as $key => $esempi)  {?>
+        <li>
+        
         </li>
+        <?php } ?> -->
+        
+        <?php foreach ($spesa as $spesi )  {?>
+        <li> <?php echo $spesi ?> </li> 
+        <?php  } ?>
+        
+        
         
     </ul>
 </body>
