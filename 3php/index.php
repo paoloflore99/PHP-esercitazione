@@ -47,7 +47,7 @@ if ($hotels[0]["parcheggio"] != false) {
 } else {
     echo "non va";
 }
-
+ 
 
 ?>
 
@@ -67,9 +67,10 @@ if ($hotels[0]["parcheggio"] != false) {
 
     <form action="" method="GET" class="d-flex justify-content-center p-5">
         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" name="parcheggio">
-        <label class="form-check-label" for="flexCheckIndeterminate">
+        <!-- <label class="form-check-label" for="flexCheckIndeterminate">
             parcheggio
-        </label>
+        </label> -->
+        <button>invio</button>
     </form>
 
     <table class="table container">
@@ -124,3 +125,5 @@ if ($hotels[0]["parcheggio"] != false) {
 
 </body>
 </html>
+
+<!-- 08 -->
