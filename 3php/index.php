@@ -40,7 +40,7 @@ $hotels = [
 
 $parcheggio = isset($_GET['parcheggio']) ? $_GET['parcheggio'] : null;
 
-
+ 
 
 if ($hotels[0]["parcheggio"] != false) {
     var_dump($hotels[0]);
