@@ -21,7 +21,7 @@ function nomeFunzione ($numero1 , $numero2 ,$ciao) {
 //$moltiplicatore che era fuori dalla funzione
 echo nomeFunzione(12, 23 , $moltiplicatore);
 
-
+//08 2 includ
 ?>
 
 
@@ -41,3 +41,4 @@ echo nomeFunzione(12, 23 , $moltiplicatore);
 
 </body>
 </html>
+
