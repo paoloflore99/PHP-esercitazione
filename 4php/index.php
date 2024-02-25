@@ -1,3 +1,30 @@
+<?php
+
+
+$moltiplicatore = 2;
+    // $moltiplicatore = 2;
+function nomeFunzione ($numero1 , $numero2 ,$ciao) {
+
+    //posso usare solo variabbile crate allinteno delle funzioine
+    
+    return ($numero1 + $numero2) * $ciao;
+
+};
+
+
+
+
+//asegnazione
+//in questo caso sto asegnado alle variabbili $numero1 e $numero2 i valori 12 e 23
+
+//oppre come per  esempio della variabbile $ciao ho asegno la variabbile 
+//$moltiplicatore che era fuori dalla funzione
+echo nomeFunzione(12, 23 , $moltiplicatore);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
