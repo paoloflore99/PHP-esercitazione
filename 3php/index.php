@@ -50,7 +50,7 @@ if ($hotels[0]["parcheggio"] != false) {
 
 // $filtroparcheggio = $_GET["parcheggio"] ?? '';
 
-
+ 
 ?>
 
 
