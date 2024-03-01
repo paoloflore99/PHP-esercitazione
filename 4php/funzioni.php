@@ -23,13 +23,40 @@ echo nomeFunzione(12, 23 , $moltiplicatore);
 
 //08 2 includ
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Appunti PHP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
 
@@ -38,6 +65,7 @@ echo nomeFunzione(12, 23 , $moltiplicatore);
     <ul>
         <li>
             <strong>Funzione di Base:</strong>
+            <p>Definizione di una funzione e chiamata con argomenti.</p>
             <pre>
                 <code>
 $moltiplicatore = 2;
@@ -53,22 +81,59 @@ echo nomeFunzione(12, 23, $moltiplicatore);
 
         <li>
             <strong>Tipi di Dati:</strong>
-            <p>Conoscere i tipi di dati in PHP (int, string, float, ecc.)</p>
+            <p>Utilizzo di diversi tipi di dati in PHP.</p>
+            <pre>
+                <code>
+$intero = 42;
+$stringa = "Ciao, mondo!";
+$float = 3.14;
+                </code>
+            </pre>
         </li>
 
         <li>
             <strong>Portata delle Variabili:</strong>
-            <p>Comprendere la portata delle variabili (globale, locale, statica).</p>
+            <p>Comprendere la portata delle variabili.</p>
+            <pre>
+                <code>
+$variabile_globale = 10;
+
+function funzione_locale() {
+    $variabile_locale = 5;
+    echo $variabile_locale;
+}
+
+echo $variabile_globale;
+                </code>
+            </pre>
         </li>
 
         <li>
             <strong>Altre Funzioni:</strong>
-            <p>Esplorare più funzioni predefinite di PHP.</p>
+            <p>Utilizzo di altre funzioni predefinite di PHP.</p>
+            <pre>
+                <code>
+$lunghezza_stringa = strlen("Hello, World!");
+$maiuscolo = strtoupper("ciao");
+$casuale = rand(1, 100);
+                </code>
+            </pre>
         </li>
 
         <li>
             <strong>Strutture di Controllo:</strong>
-            <p>Studiare le strutture di controllo come if, else, switch, e cicli come for e while.</p>
+            <p>Utilizzo delle strutture di controllo in PHP.</p>
+            <pre>
+                <code>
+$numero = 15;
+
+if ($numero > 10) {
+    echo "Il numero è maggiore di 10";
+} else {
+    echo "Il numero è 10 o inferiore";
+}
+                </code>
+            </pre>
         </li>
     </ul>
 
