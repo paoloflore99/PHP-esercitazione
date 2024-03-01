@@ -28,16 +28,49 @@ echo nomeFunzione(12, 23 , $moltiplicatore);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="https://boolean.careers/favicon/favicon.ico">
-        <link rel="stylesheet" href="./css/style.css"><!--css-->
-        <title>Php</title>
+    <meta charset="UTF-8">
+    <title>Appunti PHP</title>
 </head>
 <body>
 
+    <h2>Appunti PHP - Funzioni</h2>
+
+    <ul>
+        <li>
+            <strong>Funzione di Base:</strong>
+            <pre>
+                <code>
+$moltiplicatore = 2;
+
+function nomeFunzione($numero1, $numero2, $ciao) {
+    return ($numero1 + $numero2) * $ciao;
+}
+
+echo nomeFunzione(12, 23, $moltiplicatore);
+                </code>
+            </pre>
+        </li>
+
+        <li>
+            <strong>Tipi di Dati:</strong>
+            <p>Conoscere i tipi di dati in PHP (int, string, float, ecc.)</p>
+        </li>
+
+        <li>
+            <strong>Portata delle Variabili:</strong>
+            <p>Comprendere la portata delle variabili (globale, locale, statica).</p>
+        </li>
+
+        <li>
+            <strong>Altre Funzioni:</strong>
+            <p>Esplorare più funzioni predefinite di PHP.</p>
+        </li>
+
+        <li>
+            <strong>Strutture di Controllo:</strong>
+            <p>Studiare le strutture di controllo come if, else, switch, e cicli come for e while.</p>
+        </li>
+    </ul>
 
 </body>
 </html>
