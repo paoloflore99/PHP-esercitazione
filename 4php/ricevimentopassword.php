@@ -1,5 +1,10 @@
 <?php 
 
+
+$nome = $_GET["nome"];
+$cognome = $_GET["cognome"];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +22,7 @@
 <nav class="container text-center p-4">
     <h1>invio dati form per la pssword</h1>
 </nav>
-
+<p>ciao <?php echo $nome ?> <?php echo $cognome ?></p>
 
 </body>
 </html>
