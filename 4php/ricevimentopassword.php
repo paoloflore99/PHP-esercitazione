@@ -1,11 +1,48 @@
-<?php 
-
-
+<?php
 $nome = $_GET["nome"];
 $cognome = $_GET["cognome"];
+$password = PasswordGenerara(33);
 
+
+
+
+function PasswordGenerara($lunghezza) {
+
+    $simboli = ["!", "@", "#", "$", "%", "^", "&", "(", ")", "_", "-", "=", "+", "?" ];
+    $lettereMinuscole = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l", "m", "n"];
+    $lettereMaiuscole = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "L", "M", "N", "O", "P", "Q", "R"];
+    $random = [1, 1 , 2, 3 ,4, 5 ,6 ,7 ,8 ,9 ];
+
+    // $numerirandom = rand(0,9);
+
+
+    $password = ''; 
+
+    for ($i = 0; $i < $lunghezza; $i++) {
+        $sceltaArray = rand(1, 4); 
+        switch ($sceltaArray) {
+            case 1:
+                $password .= $simboli[array_rand($simboli)];
+                break;
+            case 2:
+                $password .= $lettereMinuscole[array_rand($lettereMinuscole)];
+                break;
+            case 3:
+                $password .= $lettereMaiuscole[array_rand($lettereMaiuscole)];
+                break;
+            case 4:
+                $password .= $random[array_rand( $random)];
+                break;
+        }
+    }
+
+    return $password;
+}
 
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +59,17 @@ $cognome = $_GET["cognome"];
 <nav class="container text-center p-4">
     <h1>invio dati form per la pssword</h1>
 </nav>
-<p>ciao <?php echo $nome ?> <?php echo $cognome ?></p>
+<div class="container">
+    <p>ciao <?php echo $nome ?> <?php echo $cognome ?></p>
+    <p>la tua password e <strong><?php echo $password ?></strong></p>
+</div>
+
+
+<div class="container p-3">
+    <h3>come ho fatto a creara un generatore di password</h3>
+</div>
+
+
 
 </body>
 </html>
