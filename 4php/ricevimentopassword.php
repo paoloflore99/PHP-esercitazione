@@ -73,3 +73,65 @@ function PasswordGenerara($lunghezza) {
 
 </body>
 </html>
+    <div class="container">
+        <H2>creazione password automatica</H2>
+    </div>
+
+
+    <div class="container">
+        <ul>
+
+            <li>
+                <strong>Dichiaro la funzione:</strong>
+                <p>Allinterno della funzione richiamo le variabbili </p>
+                <pre>
+                    <code>
+                        function PasswordGenerara($lunghezza) {
+                        }
+                    </code>
+                </pre>
+            </li> 
+
+
+            <li>
+                <strong>variabbili:</strong>
+                <p>Creo tre variabbili allintero della funzione : lettere minuscole maiuscole e numeri.</p>
+                <pre>
+                    <code>   
+                        $simboli = ["!", "@", "#", "$", "%", "^", "&", "(", ")", "_", "-", "=", "+", "?" ];
+                        $lettereMinuscole = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l", "m", "n"];
+                        $lettereMaiuscole = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "L", "M", "N", "O", "P", "Q", "R"];
+                        $random = [1, 1 , 2, 3 ,4, 5 ,6 ,7 ,8 ,9 ];</code>
+                </pre>
+            </li>
+
+            
+            
+            <li>
+
+            
+            </li>
+        </ul>
+    </div>
+
+
+
+<!-- for ($i = 0; $i < $lunghezza; $i++): Questo è un ciclo for che si ripeterà per il numero di volte specificato dalla variabile $lunghezza. In ogni iterazione, il blocco di codice all'interno del ciclo verrà eseguito.
+
+$sceltaArray = rand(1, 4);: Qui viene generato un numero casuale tra 1 e 4 e assegnato alla variabile $sceltaArray. Questo numero verrà utilizzato per determinare quale tipo di carattere verrà aggiunto alla password nella corrente iterazione del ciclo.
+
+switch ($sceltaArray) { ... }: Questo è uno statement switch, che è una forma di controllo di flusso che permette di eseguire diversi blocchi di codice in base al valore di $sceltaArray.
+
+Nei vari case, viene scelto il tipo di carattere da aggiungere alla password in base al valore di $sceltaArray.
+
+case 1: Se $sceltaArray è 1, viene aggiunto un simbolo casualmente scelto dalla lista $simboli.
+
+case 2: Se $sceltaArray è 2, viene aggiunta una lettera minuscola casualmente scelta dalla lista $lettereMinuscole.
+
+case 3: Se $sceltaArray è 3, viene aggiunta una lettera maiuscola casualmente scelta dalla lista $lettereMaiuscole.
+
+case 4: Se $sceltaArray è 4, viene aggiunto un elemento casuale dalla lista $random. Nota che $random è dichiarato come una variabile numerica con rand(0, 10), quindi potrebbe non avere l'effetto desiderato. Potrebbe essere meglio sostituire $random con un array di caratteri casuali.
+
+$password .= ...;: Questo operatore concatenazione (.=) viene utilizzato per aggiungere il carattere scelto alla fine della variabile $password. Ogni iterazione del ciclo aggiunge un nuovo carattere alla password fino a quando la lunghezza specificata da $lunghezza viene raggiunta.
+
+In sintesi, questo blocco di codice genera una password casuale combinando simboli, lettere minuscole, lettere maiuscole e un elemento casuale da $random in base alle scelte casuali definite da $sceltaArray. -->
