@@ -11,19 +11,19 @@ function PasswordGenerara($lunghezza) {
     $simboli = ["!", "@", "#", "$", "%", "^", "&", "(", ")", "_", "-", "=", "+", "?" ];
     $lettereMinuscole = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l", "m", "n"];
     $lettereMaiuscole = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "L", "M", "N", "O", "P", "Q", "R"];
-    $random = [1, 1 , 2, 3 ,4, 5 ,6 ,7 ,8 ,9 ];
+    $random = [0, 1 , 2, 3 ,4, 5 ,6 ,7 ,8 ,9 ];
 
     // $numerirandom = rand(0,9);
 
 
     $password = ''; 
 
-    for ($i = 0; $i < $lunghezza; $i++) {
+    for ($i = 0; $i <= $lunghezza; $i++) {
         $sceltaArray = rand(1, 4); 
         switch ($sceltaArray) {
             case 1:
                 $password .= $simboli[array_rand($simboli)];
-                break;
+                break;//interrompe il ciclo 
             case 2:
                 $password .= $lettereMinuscole[array_rand($lettereMinuscole)];
                 break;
@@ -38,6 +38,9 @@ function PasswordGenerara($lunghezza) {
 
     return $password;
 }
+
+
+// var_dump($password);
 
 ?>
 
@@ -112,6 +115,15 @@ $random = [1, 1 , 2, 3 ,4, 5 ,6 ,7 ,8 ,9 ];</code>
 
             </li>
         </ul>
+
+
+        <li>
+            <strong></strong>
+            <p></p>
+            <pre>
+<code>function PasswordGenerara($lunghezza) {...}</code>
+            </pre>
+        </li>
     </div>
 
 
