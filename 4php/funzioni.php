@@ -50,8 +50,7 @@ function nomeFunzione($numero1, $numero2, $ciao) {
     return ($numero1 + $numero2) * $ciao;
 }
 
-echo nomeFunzione(12, 23, $moltiplicatore);
-                </code>
+echo nomeFunzione(12, 23, $moltiplicatore);</code>
             </pre>
         </li>
 
@@ -62,8 +61,7 @@ echo nomeFunzione(12, 23, $moltiplicatore);
                 <code>
 $intero = 42;
 $stringa = "Ciao, mondo!";
-$float = 3.14;
-                </code>
+$float = 3.14;</code>
             </pre>
         </li>
 
@@ -79,8 +77,7 @@ function funzione_locale() {
     echo $variabile_locale;
 }
 
-echo $variabile_globale;
-                </code>
+echo $variabile_globale;</code>
             </pre>
         </li>
 
@@ -91,8 +88,7 @@ echo $variabile_globale;
                 <code>
 $lunghezza_stringa = strlen("Hello, World!");
 $maiuscolo = strtoupper("ciao");
-$casuale = rand(1, 100);
-                </code>
+$casuale = rand(1, 100);</code>
             </pre>
         </li>
 
@@ -107,8 +103,7 @@ if ($numero > 10) {
     echo "Il numero è maggiore di 10";
 } else {
     echo "Il numero è 10 o inferiore";
-}
-                </code>
+}</code>
             </pre>
         </li>
     </ul>

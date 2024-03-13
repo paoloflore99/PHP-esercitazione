@@ -1,9 +1,13 @@
 <?php
-$nome = $_GET["nome"];
-$cognome = $_GET["cognome"];
+$nome = $_GET["nome"] ?? null;
+$cognome = $_GET["cognome"] ?? null;
 $password = PasswordGenerara(33);
 
 
+//sse non ricevo entramni i cambia rimando al form 
+if (!$nome || !$cognome) {
+    header('Location: eserciziopassword.php');
+};
 
 
 function PasswordGenerara($lunghezza) {
@@ -87,8 +91,10 @@ function PasswordGenerara($lunghezza) {
                 <pre>
                     
 <code>function PasswordGenerara($lunghezza) { ...}</code>
-                    
-                </pre>
+    </pre>
+                <p>e la variabbile che richiamo e </p>
+
+<code>$password = PasswordGenerara(33);</code>
             </li> 
 
 
@@ -110,26 +116,42 @@ $random = [1, 1 , 2, 3 ,4, 5 ,6 ,7 ,8 ,9 ];</code>
                 <strong>Ciclo for:</strong>
                 <p></p>
                 <pre>
-<code>for ($i = 0; $i < $lunghezza; $i++) {}</code>
+<code>
+for ($i = 0; $i < $lunghezza; $i++) {}</code>
                 </pre>
 
             </li>
-        </ul>
+
+
+            <li>
+            <strong>funzione</strong>
+            <p>r</p>
+            <pre>
+<code>
+function PasswordGenerara($lunghezza) {...}</code>
+            </pre>
+        </li>
+
 
 
         <li>
             <strong></strong>
             <p></p>
             <pre>
-<code>function PasswordGenerara($lunghezza) {...}</code>
+                <code>
+                    
+                </code>
             </pre>
         </li>
+        </ul>
+
+
+
     </div>
 
 
 </body>
 </html>
-   
 
 
 <!-- for ($i = 0; $i < $lunghezza; $i++): Questo è un ciclo for che si ripeterà per il numero di volte specificato dalla variabile $lunghezza. In ogni iterazione, il blocco di codice all'interno del ciclo verrà eseguito.
