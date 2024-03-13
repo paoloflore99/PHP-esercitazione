@@ -3,6 +3,25 @@
         "nome" : "paolo" ,
         "cognome" : "flore" ,
         "eta" : 24 ,
+        "teleno" : [
+            3285933123 ,
+            3280059514
+        ] , 
         "luogo di nascita" : "tivoli" 
-    }
+
+    } ,
+
+
+    {
+        "nome" : "sara" ,
+        "cognome" : "flore" ,
+        "eta" : 24 ,
+        "teleno" : [
+            3284802340 ,
+            3284839902
+        ] , 
+        "luogo di nascita" : "tivoli" 
+
+    } 
+
 ]
