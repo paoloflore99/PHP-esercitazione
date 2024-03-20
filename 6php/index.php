@@ -1,10 +1,31 @@
 <?php 
+// Dove si trova fisicamente il database 
+define("DB_LOCALHOST" , "localhost");
 
-define("DB_LOCALOST" , "localost");
+// La porta di MySQL
+define("DB_PORT" , 3306);
+
+// Nome del database su MySQL
 define("DB_NAME" , "classe_201");
+
+// Dati di accesso 
 define("DB_MAIL" , "root");
 define("DB_PASSWORD" , "root");
+
+// Creare un'istanza di connessione 
+//devo seguire lordine che mi inpone mysqli()
+$connessione = new mysqli(DB_LOCALHOST, DB_MAIL, DB_PASSWORD, DB_NAME, DB_PORT);
+
+// Verificare se la connessione è stata stabilita correttamente
+if ($connessione->connect_error) {
+    echo "Connessione non riuscita: " . $connessione->connect_error ;
+    die();
+} else {
+    echo "Connessione riuscita!";
+}
 ?>
+
+
 
 
 <!DOCTYPE html>
