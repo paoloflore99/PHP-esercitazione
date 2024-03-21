@@ -1,37 +1,3 @@
-<?php 
-// Dove si trova fisicamente il database 
-define("DB_LOCALHOST" , "localhost");
-
-// La porta di MySQL
-define("DB_PORT" , 3306);
-
-// Nome del database su MySQL
-define("DB_NAME" , "classe_201");
-
-// Dati di accesso 
-define("DB_MAIL" , "root");
-define("DB_PASSWORD" , "root");
-
-// Creare un'istanza di connessione 
-//devo seguire lordine che mi inpone mysqli()
-$connessione = new mysqli(DB_LOCALHOST, DB_MAIL, DB_PASSWORD, DB_NAME, DB_PORT);
-
-// Verificare se la connessione è stata stabilita correttamente
-if ($connessione && $connessione->connect_error) {
-    echo "Connessione non riuscita: " . $connessione->connect_error ;
-    die();
-} else {
-    echo "Connessione riuscita!";
-
-    
-}
-
-// var_dump($connessione);
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +10,6 @@ if ($connessione && $connessione->connect_error) {
         <title>php</title>
 </head>
 <body>
-
+<script src="../PROVA TECNICA JS/JS/javs.js"> </script>
 </body>
 </html>
