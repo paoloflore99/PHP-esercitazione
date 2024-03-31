@@ -42,6 +42,13 @@ $parcheggio = isset($_GET['parcheggio']) ? $_GET['parcheggio'] : null;
 
 
 
+// echo ($hotels[1]["nome"]);
+foreach ($hotels as $hotel ) {
+    echo  $hotel["nome"];
+}
+
+
+
 if ($hotels[0]["parcheggio"] != false) {
     var_dump($hotels[0]);
 } else {
