@@ -1,7 +1,11 @@
 <?php
 
+class user {
+
+}
 
 
+$mario = new user();
 ?>
 
 
